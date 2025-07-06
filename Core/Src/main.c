@@ -96,7 +96,7 @@ int main(void)
 	  if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12) == GPIO_PIN_RESET)
 	  {
 		  HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
-		  HAL_Delay(1000);   //updated delay
+		  HAL_Delay(500);   //updated delay
 	  }
     /* USER CODE BEGIN 3 */
   }

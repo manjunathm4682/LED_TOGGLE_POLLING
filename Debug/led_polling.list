@@ -277,9 +277,9 @@ int main(void)
  8000240:	2180      	movs	r1, #128	; 0x80
  8000242:	0018      	movs	r0, r3
  8000244:	f000 fc0a 	bl	8000a5c <HAL_GPIO_TogglePin>
-		  HAL_Delay(1000);   //updated delay
+		  HAL_Delay(500);   //updated delay
  8000248:	23fa      	movs	r3, #250	; 0xfa
- 800024a:	009b      	lsls	r3, r3, #2
+ 800024a:	005b      	lsls	r3, r3, #1
  800024c:	0018      	movs	r0, r3
  800024e:	f000 f987 	bl	8000560 <HAL_Delay>
 	  if(HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_12) == GPIO_PIN_RESET)
